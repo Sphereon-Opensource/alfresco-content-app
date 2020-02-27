@@ -138,6 +138,7 @@
       "BLOCKCHAIN_VERIFY": "Verify on Blockchain"
     },
     "DIALOGS": {
+      "EDIT_FILE": "Datei bearbeiten",
       "CONFIRM_PURGE": {
         "TITLE": "Aus Papierkorb löschen?",
         "MESSAGE": "Dadurch werden die ausgewählten Elemente dauerhaft gelöscht.",

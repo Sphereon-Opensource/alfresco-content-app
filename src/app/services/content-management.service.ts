@@ -63,6 +63,7 @@ import { NodeVersionsDialogComponent } from '../dialogs/node-versions/node-versi
 import { ShareDialogComponent } from '../components/shared/content-node-share/content-node-share.dialog';
 import { take, map, tap, mergeMap, catchError } from 'rxjs/operators';
 import { NodePermissionsDialogComponent } from '../components/permissions/permission-dialog/node-permissions.dialog';
+import {TranslateService} from "@ngx-translate/core";
 
 interface RestoredNode {
   status: number;
@@ -78,6 +79,7 @@ export class ContentManagementService {
   nodesDeleted = new Subject<any>();
   nodesPurged = new Subject<any>();
   nodesRestored = new Subject<any>();
+  fileEdited = new Subject<any>();
   folderEdited = new Subject<any>();
   folderCreated = new Subject<any>();
   libraryDeleted = new Subject<string>();
@@ -241,6 +243,29 @@ export class ContentManagementService {
         this.folderCreated.next(node);
       }
     });
+  }
+
+  // TODO replace / generalize FolderDialogComponent with a dialog also suitable for files
+  editFile(file: MinimalNodeEntity) {
+    if (file && file.entry) {
+      const dialog = this.dialogRef.open(FolderDialogComponent, {
+        data: {
+          folder: file.entry,
+          editTitle: this.translation.instant('APP.DIALOGS.EDIT_FILE'),
+        },
+        width: '400px'
+      });
+
+      dialog.componentInstance.error.subscribe(message => {
+        this.store.dispatch(new SnackbarErrorAction(message));
+      });
+
+      dialog.afterClosed().subscribe((node: MinimalNodeEntryEntity) => {
+        if (node) {
+          this.fileEdited.next(node);
+        }
+      });
+    }
   }
 
   editFolder(folder: MinimalNodeEntity) {

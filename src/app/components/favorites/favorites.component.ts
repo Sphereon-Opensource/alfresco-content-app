@@ -66,6 +66,7 @@ export class FavoritesComponent extends PageComponent implements OnInit {
       this.content.nodesDeleted.subscribe(() => this.reload()),
       this.content.nodesRestored.subscribe(() => this.reload()),
       this.content.folderEdited.subscribe(() => this.reload()),
+      this.content.fileEdited.subscribe(() => this.reload()),
       this.content.nodesMoved.subscribe(() => this.reload()),
       this.content.favoriteRemoved.subscribe(() => this.reload()),
       this.content.favoriteToggle.subscribe(() => this.reload()),

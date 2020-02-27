@@ -276,18 +276,17 @@
       "id": "app.toolbar.canEditFolder",
       "type": "core.every",
       "parameters": [
-        {
-          "type": "rule",
-          "value": "app.selection.folder"
-        },
-        {
-          "type": "rule",
-          "value": "app.selection.folder.canUpdate"
-        },
-        {
-          "type": "rule",
-          "value": "app.navigation.isNotTrashcan"
-        }
+        { "type": "rule", "value": "app.selection.folder" },
+        { "type": "rule", "value": "app.selection.folder.canUpdate" },
+        { "type": "rule", "value": "app.navigation.isNotTrashcan" }
+      ]
+    },
+    {
+      "id": "app.toolbar.canEditFile",
+      "type": "core.every",
+      "parameters": [
+        { "type": "rule", "value": "app.selection.file" },
+        { "type": "rule", "value": "app.navigation.isNotTrashcan" }
       ]
     },
     {
@@ -503,6 +502,18 @@
         },
         "rules": {
           "visible": "app.toolbar.canEditFolder"
+        }
+      },
+      {
+        "id": "app.toolbar.editFile",
+        "order": 310,
+        "title": "APP.ACTIONS.EDIT",
+        "icon": "create",
+        "actions": {
+          "click": "EDIT_FILE"
+        },
+        "rules": {
+          "visible": "app.toolbar.canEditFile"
         }
       },
       {
@@ -776,6 +787,18 @@
         },
         "rules": {
           "visible": "app.toolbar.canEditFolder"
+        }
+      },
+      {
+        "id": "app.context.menu.editFile",
+        "order": 410,
+        "title": "APP.ACTIONS.EDIT",
+        "icon": "create",
+        "actions": {
+          "click": "EDIT_FILE"
+        },
+        "rules": {
+          "visible": "app.toolbar.canEditFile"
         }
       },
       {

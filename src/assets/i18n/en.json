@@ -206,6 +206,7 @@
             "BLOCKCHAIN_VERIFY": "Verify on Blockchain"
         },
         "DIALOGS": {
+            "EDIT_FILE": "Edit file",
             "CONFIRM_PURGE": {
                 "TITLE": "Delete from trash?",
                 "MESSAGE": "This will permanently remove the selected item(s).",

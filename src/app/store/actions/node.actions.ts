@@ -44,6 +44,7 @@ export const PRINT_FILE = 'PRINT_FILE';
 export const FULLSCREEN_VIEWER = 'FULLSCREEN_VIEWER';
 export const BLOCKCHAIN_REGISTER = 'BLOCKCHAIN_REGISTER';
 export const BLOCKCHAIN_VERIFY = 'BLOCKCHAIN_VERIFY';
+export const EDIT_FILE = 'EDIT_FILE';
 
 
 export class SetSelectedNodesAction implements Action {
@@ -134,5 +135,10 @@ export class BlockchainSignAction implements Action {
 export class BlockchainVerifyAction implements Action {
     readonly type = BLOCKCHAIN_VERIFY;
     constructor(public payload: Array<MinimalNodeEntity>) {}
+}
+
+export class EditFileAction implements Action {
+  readonly type = EDIT_FILE;
+  constructor(public payload: MinimalNodeEntity) {}
 }
 

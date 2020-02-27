@@ -116,6 +116,12 @@ describe('FavoritesComponent', () => {
       expect(component.reload).toHaveBeenCalled();
     });
 
+    it('should refresh on editing file event', () => {
+      contentService.fileEdited.next(null);
+
+      expect(component.reload).toHaveBeenCalled();
+    });
+
     it('should refresh on move node event', () => {
       contentService.nodesMoved.next(null);
 

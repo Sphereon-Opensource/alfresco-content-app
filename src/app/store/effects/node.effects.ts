@@ -39,6 +39,8 @@ import {
   CREATE_FOLDER,
   EditFolderAction,
   EDIT_FOLDER,
+  EditFileAction,
+  EDIT_FILE,
   RestoreDeletedNodesAction,
   RESTORE_DELETED_NODES,
   ShareNodeAction,
@@ -372,6 +374,25 @@ export class NodeEffects {
             }
         })
     );
+
+  @Effect({dispatch: false})
+  editFile$ = this.actions$.pipe(
+    ofType<EditFileAction>(EDIT_FILE),
+    map(action => {
+      if (action && action.payload) {
+        this.contentService.editFile(action.payload);
+      } else {
+        this.store
+        .select(appSelection)
+        .pipe(take(1))
+        .subscribe(selection => {
+          if (selection && selection.file) {
+            this.contentService.editFile(selection.file);
+          }
+        });
+      }
+    })
+  );
 
     private signNodes(selection) {
         const messageBuilder = [];

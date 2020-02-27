@@ -138,6 +138,7 @@
       "BLOCKCHAIN_VERIFY": "Verify on Blockchain"
     },
     "DIALOGS": {
+      "EDIT_FILE": "Editer le fichier",
       "CONFIRM_PURGE": {
         "TITLE": "Supprimer de la corbeille ?",
         "MESSAGE": "Le ou les éléments sélectionnés seront définitivement supprimés.",

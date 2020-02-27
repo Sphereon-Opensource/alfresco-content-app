@@ -103,6 +103,7 @@ export class FilesComponent extends PageComponent implements OnInit, OnDestroy {
       ),
       content.folderCreated.subscribe(() => this.documentList.reload()),
       content.folderEdited.subscribe(() => this.documentList.reload()),
+      content.fileEdited.subscribe(() => this.documentList.reload()),
       content.nodesDeleted.subscribe(() => this.documentList.reload()),
       content.nodesMoved.subscribe(() => this.documentList.reload()),
       content.nodesRestored.subscribe(() => this.documentList.reload()),
