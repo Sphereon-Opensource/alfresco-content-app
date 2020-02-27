@@ -167,6 +167,7 @@
                 "NAME": "Naam",
                 "SIZE": "Grootte",
                 "MODIFIED_ON": "Aangepast",
+                "MODIFIED_BY": "Aangepast door",
                 "STATUS": "Status",
                 "TITLE": "Titel",
                 "LOCATION": "Locatie",

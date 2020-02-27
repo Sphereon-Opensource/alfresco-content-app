@@ -150,6 +150,7 @@
         "NAME": "名前",
         "SIZE": "サイズ",
         "MODIFIED_ON": "変更日",
+        "MODIFIED_BY": "変更者",
         "STATUS": "ステータス",
         "TITLE": "タイトル",
         "LOCATION": "場所",
