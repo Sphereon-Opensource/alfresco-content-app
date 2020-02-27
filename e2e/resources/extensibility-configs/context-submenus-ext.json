@@ -1001,15 +1001,6 @@
           "format": "timeAgo",
           "sortable": true,
           "desktopOnly": true
-        },
-        {
-          "id": "app.files.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
-          "sortable": true,
-          "desktopOnly": true
         }
       ],
       "libraries": [
@@ -1083,15 +1074,6 @@
           "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_ON",
           "type": "date",
           "format": "timeAgo",
-          "sortable": true,
-          "desktopOnly": true
-        },
-        {
-          "id": "app.shared.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
           "sortable": true,
           "desktopOnly": true
         },
@@ -1193,15 +1175,6 @@
           "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_ON",
           "type": "date",
           "format": "timeAgo",
-          "sortable": true,
-          "desktopOnly": true
-        },
-        {
-          "id": "app.favorites.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
           "sortable": true,
           "desktopOnly": true
         }

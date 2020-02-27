@@ -1328,15 +1328,6 @@
           "desktopOnly": true
         },
         {
-          "id": "app.files.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
-          "sortable": true,
-          "desktopOnly": true
-        },
-        {
           "id": "app.files.registrationState",
           "key": "properties.bc:StateIcon",
           "title": "APP.DOCUMENT_LIST.COLUMNS.BC_REGISTRATION_STATE",
@@ -1484,15 +1475,6 @@
           "desktopOnly": true
         },
         {
-          "id": "app.shared.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
-          "sortable": true,
-          "desktopOnly": true
-        },
-        {
           "id": "app.shared.sharedBy",
           "key": "sharedByUser.displayName",
           "title": "APP.DOCUMENT_LIST.COLUMNS.SHARED_BY",
@@ -1590,15 +1572,6 @@
           "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_ON",
           "type": "date",
           "format": "timeAgo",
-          "sortable": true,
-          "desktopOnly": true
-        },
-        {
-          "id": "app.favorites.modifiedBy",
-          "key": "modifiedByUser.displayName",
-          "title": "APP.DOCUMENT_LIST.COLUMNS.MODIFIED_BY",
-          "type": "text",
-          "class": "adf-data-table-cell--ellipsis",
           "sortable": true,
           "desktopOnly": true
         }
