@@ -154,7 +154,6 @@
             "BLOCKCHAIN_VERIFY": "Blockchain controle"
         },
         "DIALOGS": {
-            "EDIT_FILE": "Bewerk bestand",
             "CONFIRM_PURGE": {
                 "TITLE": "Verwijderen uit prullenbak?",
                 "MESSAGE": "Hiermee worden de geselecteerde items permanent verwijderd.",
