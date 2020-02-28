@@ -57,7 +57,13 @@ export class LibraryDialogComponent implements OnInit, OnDestroy {
   form: FormGroup;
   visibilityOption: any;
   visibilityOptions = [
-    { value: 'PRIVATE', label: 'LIBRARY.VISIBILITY.PRIVATE', disabled: false }
+    { value: 'PUBLIC', label: 'LIBRARY.VISIBILITY.PUBLIC', disabled: false },
+    { value: 'PRIVATE', label: 'LIBRARY.VISIBILITY.PRIVATE', disabled: false },
+    {
+      value: 'MODERATED',
+      label: 'LIBRARY.VISIBILITY.MODERATED',
+      disabled: false
+    }
   ];
 
   constructor(
